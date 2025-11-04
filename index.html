@@ -296,7 +296,64 @@
             }
         }
 
-        /* 9. MEDIA QUERIES (Mobile-First) */
+        /* 9. Estilos para a nova seção de links */
+        .document-item {
+            border-top: 1px solid var(--border-color);
+            padding-top: var(--space-sm);
+            margin-top: var(--space-md);
+        }
+
+        .document-item h4 {
+            color: var(--text-muted);
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .document-item p {
+            margin-bottom: var(--space-sm);
+            font-size: 1rem;
+        }
+
+        /* Botão de link */
+        .button-link {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: var(--primary-bg);
+            font-weight: 700;
+            font-family: var(--font-primary);
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .button-link:hover, .button-link:focus-visible {
+            background-color: var(--text-primary);
+            text-decoration: none;
+            box-shadow: var(--accent-glow);
+        }
+        
+        /* Lista de documentos pendentes */
+        .document-list {
+            list-style-type: '— ';
+            padding-left: var(--space-md);
+            color: var(--text-subtle);
+        }
+        
+        .document-list li {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .placeholder {
+            font-style: italic;
+            font-size: 0.9rem;
+            color: var(--text-subtle);
+            opacity: 0.7;
+            margin-left: 0.5rem;
+        }
+
+        /* 10. MEDIA QUERIES (Mobile-First) */
         @media (min-width: 768px) {
             .grid-container {
                 grid-template-columns: repeat(2, 1fr);
@@ -328,8 +385,7 @@
             </a>
             <!-- Links de navegação (exemplo) -->
             <nav>
-                <a href="#" style="margin-left: var(--space-sm);">Sobre</a>
-                <a href="#" style="margin-left: var(--space-sm);">Serviços</a>
+                <!-- Links removidos conforme solicitado -->
             </nav>
         </div>
     </header>
@@ -351,9 +407,41 @@
             </p>
         </section>
 
-        <!-- Card 2: Objetivos Principais -->
+        <!-- NOVO CARD: Roteiro de Apresentação e Documentos -->
+        <section class="card fade-in">
+            <h2>Roteiro de Apresentação e Documentos</h2>
+            <p style="margin-top: calc(-1 * var(--space-md) + var(--space-sm)); margin-bottom: var(--space-md);">
+                Siga esta ordem cronológica para apresentar e formalizar a instalação do Conselho.
+            </p>
+
+            <!-- 1. Documento Mestre -->
+            <div class="document-item">
+                <h4>1. O Documento Mestre (Fundação)</h4>
+                <p>Contém a motivação, o estatuto, o regimento interno e o código de conduta.</p>
+                <a href="https://docs.google.com/document/d/1DC7JFD66A9aDCzVMcGC2JF0yuKjM92DVHjvMAUR5BlA/edit?usp=sharing" target="_blank" class="button-link" rel="noopener noreferrer">
+                    Abrir Estatuto e Regimento
+                </a>
+            </div>
+
+            <!-- 2. Kit de Instalação (Placeholders) -->
+            <div class="document-item">
+                <h4>2. O Kit de Instalação (Formalização)</h4>
+                <p>Documentos a serem assinados pelos membros nomeados (links pendentes).</p>
+                <ul class="document-list">
+                    <li>Ata de Instalação do Conselho <span class="placeholder">(link pendente)</span></li>
+                    <li>Ata de Nomeação dos Conselheiros <span class="placeholder">(link pendente)</span></li>
+                    <li>Termo de Posse <span class="placeholder">(link pendente)</span></li>
+                    <li>Termo de Confidencialidade <span class="placeholder">(link pendente)</span></li>
+                    <li>Declaração de Independência e Conflitos <span class="placeholder">(link pendente)</span></li>
+                    <li>Lista de documentos obrigatórios para cada conselheiro <span class="placeholder">(link pendente)</span></li>
+                    <li>Checklist de governança familiar Goianita <span class="placeholder">(link pendente)</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Card 3: Objetivos Principais -->
         <section class="fade-in">
-            <h2>Objetivos e Funções Primárias (Art. 1º-A)</h2>
+            <h2 style="border: none; padding-bottom: 0;">Resumo do Estatuto: Objetivos (Art. 1º-A)</h2>
             <div class="grid-container">
                 
                 <div class="card">
@@ -389,10 +477,10 @@
             </div>
         </section>
 
-        <!-- Card 3: Estrutura e Votação -->
+        <!-- Card 4: Estrutura e Votação -->
         <section class="card fade-in">
-            <h2>Estrutura, Composição e Votação (Art. 4º e 8º)</h2>
-            <div class="two-col-layout">
+            <h2 style="border: none; padding-bottom: 0;">Resumo do Estatuto: Estrutura e Votação (Art. 4º e 8º)</h2>
+            <div class="two-col-layout" style="margin-top: var(--space-md);">
                 
                 <!-- Coluna da Composição -->
                 <div>
@@ -437,12 +525,12 @@
             </div>
         </section>
 
-        <!-- Card 4: Pilares Éticos e Processos -->
+        <!-- Card 5: Pilares Éticos e Processos -->
         <section class="card fade-in">
-            <h2>Pilares Éticos e Processos de Integridade (Cap. V)</h2>
+            <h2 style="border: none; padding-bottom: 0;">Resumo do Estatuto: Pilares Éticos (Cap. V)</h2>
             
             <!-- Sub-seção 1: Confidencialidade -->
-            <div style="margin-bottom: var(--space-md);">
+            <div style="margin-top: var(--space-md); margin-bottom: var(--space-md);">
                 <h3>Confidencialidade Absoluta (Art. 9º)</h3>
                 <p>Membros devem manter <strong>sigilo absoluto</strong> sobre todas as informações acessadas. Este dever perdura por <strong>5 (cinco) anos após o desligamento</strong>, sujeito a cláusula de penalidade em caso de violação.</p>
             </div>
@@ -489,10 +577,10 @@
             </div>
         </section>
         
-        <!-- Card 5: Avaliação e Desenvolvimento -->
+        <!-- Card 6: Avaliação e Desenvolvimento -->
         <section class="card fade-in">
-            <h2>Avaliação e Desenvolvimento Contínuo (Cap. VI)</h2>
-            <div class="two-col-layout">
+            <h2 style="border: none; padding-bottom: 0;">Resumo do Estatuto: Avaliação (Cap. VI)</h2>
+            <div class="two-col-layout" style="margin-top: var(--space-md);">
                 
                 <!-- Coluna da Avaliação -->
                 <div>
@@ -530,7 +618,7 @@
              class="footer-logo"
              loading="lazy">
         <p style="color: var(--text-muted); font-size: 1.1rem; font-weight: 600;">Consultoria em Gestão e Governança</p>
-        <p style="color: var(--text-subtle); margin-top: var(--space-sm);">contato@liveconsultoria.com.br</p>
+        <p style="color: var(--text-subtle); margin-top: var(--space-sm);">luizportal@ecossistemalive.com.br</p>
     </footer>
 
     <!-- SCRIPT DE ANIMAÇÃO (OBRIGATÓRIO) -->
@@ -564,4 +652,4 @@
 
 </body>
 </html>
-```
+
