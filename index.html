@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conselho Gestor - Grupo Goianita</title>
+    <!-- Carregando Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Carregando a fonte Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Aplicando a fonte Inter como padrão */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* cinza bem claro de fundo */
+        }
+        /* Definindo cores personalizadas que simulam um guia de estilo "Live" (consultoria) */
+        .bg-brand-primary { background-color: #2563eb; } /* Azul principal */
+        .text-brand-primary { color: #2563eb; }
+        .bg-brand-secondary { background-color: #4f46e5; } /* Roxo/Índigo */
+        .text-brand-secondary { color: #4f46e5; }
+        .bg-brand-light { background-color: #eef2ff; } /* Fundo azul claro */
+        .border-brand-primary { border-color: #2563eb; }
+        .text-brand-accent { color: #d946ef; } /* Destaque Fúcsia/Magenta */
+    </style>
+</head>
+<body class="antialiased text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-brand-primary text-white shadow-lg">
+        <div class="container mx-auto max-w-6xl px-4 py-10 md:py-16">
+            <h1 class="text-3xl md:text-5xl font-bold tracking-tight">Conselho Gestor</h1>
+            <p class="mt-3 text-lg md:text-xl font-medium text-blue-100">Grupo Goianita</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto max-w-6xl px-4 py-12 md:py-16 space-y-16">
+
+        <!-- Seção 1: Propósito e Missão -->
+        <section>
+            <div class="bg-brand-light border-l-4 border-brand-primary rounded-r-lg p-6 md:p-8">
+                <h2 class="text-2xl md:text-3xl font-bold text-brand-secondary">Nosso Propósito</h2>
+                <p class="mt-4 text-lg text-gray-700 leading-relaxed">
+                    Com fundamento no legado empresarial da família controladora, o Conselho Gestor do Grupo Goianita é instituído para assegurar a <strong class="font-semibold">perenidade, profissionalização e continuidade geracional</strong> da empresa.
+                </p>
+                <p class="mt-3 text-lg text-gray-700 leading-relaxed">
+                    Atuamos como um órgão colegiado, estratégico e deliberativo, focado na supervisão superior da gestão e na direção estratégica do Grupo, <strong class="font-semibold">sem exercer funções executivas</strong>.
+                </p>
+            </div>
+        </section>
+
+        <!-- Seção 2: Objetivos Principais -->
+        <section>
+            <h2 class="text-3xl font-bold text-center mb-12">Nossos Objetivos Principais</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Card Objetivo 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-brand-primary">
+                    <div class="flex items-center space-x-4">
+                        <!-- Ícone SVG: Orientação -->
+                        <svg class="w-10 h-10 text-brand-primary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75" />
+                        </svg>
+                        <h3 class="text-xl font-semibold">Orientação Estratégica</h3>
+                    </div>
+                    <p class="mt-4 text-gray-600">Definir e revisar a visão, missão e objetivos de longo prazo, garantindo um caminho sustentável e lucrativo.</p>
+                </div>
+
+                <!-- Card Objetivo 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-brand-primary">
+                    <div class="flex items-center space-x-4">
+                        <!-- Ícone SVG: Governança -->
+                        <svg class="w-10 h-10 text-brand-primary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m18-18v18m-16.5-16.5h15m-15 15h15m-15-15l15 15m-15 0l15-15" />
+                        </svg>
+                        <h3 class="text-xl font-semibold">Governança Corporativa</h3>
+                    </div>
+                    <p class="mt-4 text-gray-600">Promover transparência, responsabilidade, integridade e conformidade legal em todas as operações.</p>
+                </div>
+
+                <!-- Card Objetivo 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-brand-primary">
+                    <div class="flex items-center space-x-4">
+                        <!-- Ícone SVG: Finanças -->
+                        <svg class="w-10 h-10 text-brand-primary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.75A.75.75 0 013 4.5h.75m0 0H21m-18 0h18m0 0v14.25c0 .621-.504 1.125-1.125 1.125H3.375c-.621 0-1.125-.504-1.125-1.125V4.5m18 0L12 12.75 3 4.5m18 0v.006c0 .414-.336.75-.75.75H3.75a.75.75 0 01-.75-.75V4.5m18 0v.006a.75.75 0 01-.75.75H3.75a.75.75 0 01-.75-.75V4.5" />
+                        </svg>
+                        <h3 class="text-xl font-semibold">Supervisão Financeira</h3>
+                    </div>
+                    <p class="mt-4 text-gray-600">Aprovar orçamentos anuais, investimentos significativos e supervisionar a saúde financeira da empresa.</p>
+                </div>
+
+                <!-- Card Objetivo 4 -->
+                <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-brand-primary">
+                    <div class="flex items-center space-x-4">
+                        <!-- Ícone SVG: Riscos -->
+                        <svg class="w-10 h-10 text-brand-primary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m0-10.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.75c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.75h-.152c-3.196 0-6.1-1.249-8.25-3.286zm0 13.036h.008v.008H12v-.008z" />
+                        </svg>
+                        <h3 class="text-xl font-semibold">Gestão de Riscos</h3>
+                    </div>
+                    <p class="mt-4 text-gray-600">Identificar, avaliar e gerenciar riscos legais, financeiros, operacionais e de reputação, garantindo planos de contingência.</p>
+                </div>
+
+                <!-- Card Objetivo 5 -->
+                <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-brand-primary">
+                    <div class="flex items-center space-x-4">
+                        <!-- Ícone SVG: Supervisão Executiva -->
+                        <svg class="w-10 h-10 text-brand-primary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.003c0 1.113.285 2.16.786 3.07M15 19.128c-1.113 0-2.16-.285-3.07-.786M7.5 14.25c0-1.113-.285-2.16-.786-3.07M7.5 14.25v.003c0 1.113.285 2.16.786 3.07M7.5 14.25v-.003c0-1.113.285-2.16.786-3.07m0 0c1.113 0 2.16.285 3.07.786m0 0v1.512A9.38 9.38 0 0112 15c-1.113 0-2.16-.285-3.07-.786v-1.512m0 0c-1.113 0-2.16.285-3.07.786M3 4.5A15.75 15.75 0 0112 3c1.113 0 2.16.285 3.07.786M3 4.5A15.75 15.75 0 0012 21c1.113 0 2.16-.285 3.07-.786m0 0A15.75 15.75 0 013 4.5" />
+                        </svg>
+                        <h3 class="text-xl font-semibold">Supervisão Executiva</h3>
+                    </div>
+                    <p class="mt-4 text-gray-600">Oferecer apoio e supervisão à equipe de gestão executiva, incluindo nomeação, avaliação e substituição de executivos-chave.</p>
+                </div>
+
+                <!-- Card Objetivo 6 -->
+                <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-brand-primary">
+                    <div class="flex items-center space-x-4">
+                        <!-- Ícone SVG: Stakeholders -->
+                        <svg class="w-10 h-10 text-brand-primary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                           <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A9.06 9.06 0 016 18.719m12 0c.261.07.509.143.75.22C21.104 18.203 22.5 17.228 22.5 16c0-1.532-1.893-2.774-4.228-2.774-1.297 0-2.426.406-3.264 1.058a9.06 9.06 0 01-2.032 3.665zM12 15.75c-3 0-5.754-1.126-7.5-2.936C2.39 11.66 1.5 9.969 1.5 8.25 1.5 5.79 4.254 3.75 7.5 3.75c3.246 0 6 2.04 6 4.5 0 1.719-.89 3.41-2.25 4.5a8.963 8.963 0 01-3.75 1.186z" />
+                        </svg>
+                        <h3 class="text-xl font-semibold">Relacionamento (Stakeholders)</h3>
+                    </div>
+                    <p class="mt-4 text-gray-600">Gerenciar e otimizar o relacionamento com acionistas, clientes, funcionários, fornecedores e a comunidade.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Seção 3: Estrutura e Composição -->
+        <section class="bg-white p-8 md:p-12 rounded-xl shadow-lg">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <!-- Coluna 1: Composição -->
+                <div>
+                    <h2 class="text-3xl font-bold text-brand-secondary mb-6">Estrutura e Composição</h2>
+                    <p class="text-lg text-gray-700 mb-6">O Conselho será composto por 5 a 9 membros, classificados para garantir um equilíbrio entre a visão interna e as perspectivas externas.</p>
+                    
+                    <div class="space-y-4">
+                        <!-- Categoria 1 -->
+                        <div>
+                            <span class="inline-flex items-center rounded-full bg-blue-100 px-4 py-1 text-sm font-semibold text-blue-800">
+                                Conselheiro Interno
+                            </span>
+                            <span class="ml-2 inline-flex items-center rounded-md bg-blue-800 px-3 py-1 text-sm font-medium text-white">
+                                Peso de Voto 2
+                            </span>
+                            <p class="mt-2 text-gray-600">Membros pertencentes ao quadro de sócios da GOIANITA.</p>
+                        </div>
+                        
+                        <!-- Categoria 2 -->
+                        <div>
+                            <span class="inline-flex items-center rounded-full bg-indigo-100 px-4 py-1 text-sm font-semibold text-indigo-800">
+                                Conselheiro Externo
+                            </span>
+                             <span class="ml-2 inline-flex items-center rounded-md bg-indigo-800 px-3 py-1 text-sm font-medium text-white">
+                                Peso de Voto 1
+                            </span>
+                            <p class="mt-2 text-gray-600">Pessoas com vínculo com a Casa Goianita (consultorias, contabilidade, investidores, fornecedores, etc.).</p>
+                        </div>
+
+                        <!-- Categoria 3 -->
+                        <div>
+                            <span class="inline-flex items-center rounded-full bg-gray-100 px-4 py-1 text-sm font-semibold text-gray-800">
+                                Convidado Técnico
+                            </span>
+                             <span class="ml-2 inline-flex items-center rounded-md bg-gray-800 px-3 py-1 text-sm font-medium text-white">
+                                Sem Direito a Voto
+                            </span>
+                            <p class="mt-2 text-gray-600">Especialistas convocados para esclarecimentos técnicos em pautas específicas.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coluna 2: Funcionamento -->
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Funcionamento e Deliberação</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <span class="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-brand-primary text-white font-bold text-sm mt-1">&#10003;</span>
+                            <div class="ml-3">
+                                <h4 class="font-semibold text-lg">Reuniões Quinzenais</h4>
+                                <p class="text-gray-600">Participação obrigatória, com convocação e envio de pauta com 48h de antecedência.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                             <span class="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-brand-primary text-white font-bold text-sm mt-1">&#10003;</span>
+                            <div class="ml-3">
+                                <h4 class="font-semibold text-lg">Quórum e Votação</h4>
+                                <p class="text-gray-600">As decisões são tomadas pela <strong class="text-gray-900">maioria dos votos presentes</strong>, calculada pela soma dos pesos de cada membro (Peso 2 para Internos, Peso 1 para Externos).</p>
+                            </div>
+                        </li>
+                         <li class="flex items-start">
+                             <span class="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-brand-primary text-white font-bold text-sm mt-1">&#10003;</span>
+                            <div class="ml-3">
+                                <h4 class="font-semibold text-lg">Voto de Minerva</h4>
+                                <p class="text-gray-600">Em caso de empate na votação ponderada, a decisão final será proferida pelo <strong class="text-gray-900">Presidente do Conselho</strong>.</p>
+                            </div>
+                        </li>
+                         <li class="flex items-start">
+                             <span class="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-brand-primary text-white font-bold text-sm mt-1">&#10003;</span>
+                            <div class="ml-3">
+                                <h4 class="font-semibold text-lg">Documentação</h4>
+                                <p class="text-gray-600">Todas as reuniões são registradas em atas e armazenadas em um repositório central online para acesso dos membros.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção 5: Pilares Éticos e Conflitos -->
+        <section>
+            <h2 class="text-3xl font-bold text-center mb-12">Nossos Pilares Éticos</h2>
+            <div class="bg-white p-8 md:p-12 rounded-xl shadow-lg space-y-10">
+
+                <!-- Pilar 1: Confidencialidade -->
+                <div>
+                    <h3 class="text-2xl font-bold text-brand-secondary mb-3">Confidencialidade Absoluta</h3>
+                    <p class="text-lg text-gray-700">Membros devem manter <strong class="text-gray-900">sigilo absoluto</strong> sobre todas as informações acessadas. Este dever perdura por <strong class="text-gray-900">5 (cinco) anos após o desligamento</strong>, com penalidades previstas em caso de violação.</p>
+                </div>
+
+                <hr class="border-gray-200">
+
+                <!-- Pilar 2: Gestão de Conflitos -->
+                <div>
+                    <h3 class="text-2xl font-bold text-brand-secondary mb-6">Gestão de Conflitos de Interesse</h3>
+                    <p class="text-lg text-gray-700 mb-6">Conflitos de interesse devem ser prontamente divulgados e gerenciados. Nosso processo estruturado garante uma resolução justa e focada no melhor interesse da empresa.</p>
+                    
+                    <!-- Passos da Gestão de Conflito -->
+                    <ol class="relative border-l border-gray-300 space-y-6">
+                        <li class="ml-6">
+                            <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-200 rounded-full -left-3 ring-8 ring-white font-semibold text-blue-800">1</span>
+                            <h4 class="font-semibold text-lg">Comunicação</h4>
+                            <p class="text-gray-600">A parte envolvida comunica formalmente o conflito em reunião.</p>
+                        </li>
+                        <li class="ml-6">
+                            <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-200 rounded-full -left-3 ring-8 ring-white font-semibold text-blue-800">2</span>
+                            <h4 class="font-semibold text-lg">Mediação</h4>
+                            <p class="text-gray-600">O Conselho busca uma solução consensual através da mediação.</p>
+                        </li>
+                        <li class="ml-6">
+                            <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-200 rounded-full -left-3 ring-8 ring-white font-semibold text-blue-800">3</span>
+                            <h4 class="font-semibold text-lg">Comitê Ad Hoc</h4>
+                            <p class="text-gray-600">Se a mediação falhar, um Comitê Ad Hoc de 3 membros neutros é formado.</p>
+                        </li>
+                        <li class="ml-6">
+                            <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-200 rounded-full -left-3 ring-8 ring-white font-semibold text-blue-800">4</span>
+                            <h4 class="font-semibold text-lg">Parecer Técnico</h4>
+                            <p class="text-gray-600">O Comitê analisa os fatos e emite um parecer com a solução recomendada.</p>
+                        </li>
+                         <li class="ml-6">
+                            <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-200 rounded-full -left-3 ring-8 ring-white font-semibold text-blue-800">5</span>
+                            <h4 class="font-semibold text-lg">Deliberação</h4>
+                            <p class="text-gray-600">O plenário do Conselho (excluindo as partes) vota o parecer.</p>
+                        </li>
+                         <li class="ml-6">
+                            <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-200 rounded-full -left-3 ring-8 ring-white font-semibold text-blue-800">6</span>
+                            <h4 class="font-semibold text-lg">Execução Mandatória</h4>
+                            <p class="text-gray-600">A solução aprovada é final e deve ser acatada por todos.</p>
+                        </li>
+                    </ol>
+                </div>
+
+                <hr class="border-gray-200">
+
+                <!-- Pilar 3: Canal de Denúncias -->
+                <div>
+                    <h3 class="text-2xl font-bold text-brand-secondary mb-3">Canal de Denúncia de Violações</h3>
+                    <p class="text-lg text-gray-700">Encorajamos a comunicação aberta e a responsabilidade mútua.</p>
+                    <ul class="mt-4 space-y-3 list-disc list-inside text-gray-700">
+                        <li>Disponibilizamos um <strong class="text-gray-900">link de formulário online</strong> (no grupo de WhatsApp do Conselho).</li>
+                        <li>O envio é <strong class="text-gray-900">100% anônimo</strong> e não requer login.</li>
+                        <li>O sistema notifica <strong class="text-gray-900">automaticamente todos os membros</strong> da nova denúncia.</li>
+                        <li>O membro questionado terá <strong class="text-gray-900">5 dias úteis</strong> para apresentar sua defesa prévia.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção 6: Compromisso com a Excelência -->
+        <section>
+            <h2 class="text-3xl font-bold text-center mb-12">Compromisso com a Excelência</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Card 1: Avaliação -->
+                <div class="bg-white p-8 rounded-xl shadow-md border-t-4 border-brand-accent">
+                    <h3 class="text-2xl font-semibold mb-4 text-brand-accent">Avaliação de Desempenho</h3>
+                    <p class="text-gray-600 mb-4">O Conselho realizará avaliações anuais de seu próprio desempenho e dos subcomitês, visando a melhoria contínua. Seremos medidos por KPIs, incluindo:</p>
+                    <ul class="space-y-2 list-disc list-inside text-gray-700">
+                        <li>Cumprimento do planejamento estratégico anual.</li>
+                        <li>Desvio de investimentos em relação ao planejado.</li>
+                        <li>Tempo médio de deliberação.</li>
+                        <li>Economia média negociada em contratos.</li>
+                        <li>Participação em ações de autodesenvolvimento.</li>
+                    </ul>
+                </div>
+
+                <!-- Card 2: Desenvolvimento -->
+                <div class="bg-white p-8 rounded-xl shadow-md border-t-4 border-brand-accent">
+                    <h3 class="text-2xl font-semibold mb-4 text-brand-accent">Desenvolvimento Contínuo</h3>
+                    <p class="text-gray-600 mb-4">Cada membro se compromete a manter-se tecnicamente atualizado e a buscar aprimoramento contínuo em governança, através de:</p>
+                     <ul class="space-y-2 list-disc list-inside text-gray-700">
+                        <li>Participação regular em cursos e workshops.</li>
+                        <li>Criação de Planos de Desenvolvimento Individual (PDI).</li>
+                        <li>Sessões de compartilhamento de conhecimento.</li>
+                        <li>Reuniões semestrais para monitorar o cumprimento dos PDIs.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 mt-16">
+        <div class="container mx-auto max-w-6xl px-4 py-8 text-center">
+            <p>&copy; 2025 Grupo Goianita. Todos os direitos reservados.</p>
+            <p class="text-sm text-gray-400 mt-1">Estatuto do Conselho Gestor - Guia de Implementação</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
